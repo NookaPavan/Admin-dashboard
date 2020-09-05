@@ -57,6 +57,7 @@ $ ng Serve
 3.Run Sqlserver [ex:XAMPP]
 
 **Configuration**:
+
 1.Change the Database Connection in **server.js** file.
 
 ```
