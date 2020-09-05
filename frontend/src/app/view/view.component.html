@@ -1,0 +1,52 @@
+<app-navbar></app-navbar>
+<div class="container-fluid">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+            <th>Uid</th>
+            <th>Name</th>
+            <th>Registration</th>
+            <th>Expiry Date</th>
+            <th>ImageUrl</th>
+            <th>Students</th>
+            <th>Email</th>
+            <th>website</th>
+            <th>Contact</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let u of universities">
+
+                <tr *ngIf="selected == u.uid">
+                    <td>{{u.uid}}</td>
+                    <td><input [(ngModel)]="u.uni_name"></td>
+                    <td><input [(ngModel)]="u.reg_date"></td>
+                    <td><input [(ngModel)]="u.exp_date"></td>
+                    <td><input [(ngModel)]="u.img_url"></td>
+                    <td><input [(ngModel)]="u.students"></td>
+                    <td><input [(ngModel)]="u.email"></td>
+                    <td><input [(ngModel)]="u.web_url"></td>
+                    <td><input [(ngModel)]="u.contact"></td>
+                    <td><a (click)="onupdate([u])" class="material-icons">done</a></td>
+                    <td><a (click)="ondelete([u.uid])" class="material-icons">delete</a></td>
+                </tr>
+
+                <tr *ngIf="selected != u.uid">
+                    <td>{{u.uid}}</td>
+                    <td>{{u.uni_name}}</td>
+                    <td>{{u.reg_date}}</td>
+                    <td>{{u.exp_date}}</td>
+                    <td>{{u.img_url}}</td>
+                    <td>{{u.students}}</td>
+                    <td>{{u.email}}</td>
+                    <td>{{u.web_url}}</td>
+                    <td>{{u.contact}}</td>
+                    <td><a (click)="selected =u.uid" class="material-icons">edit</a></td>
+                    <td><a (click)="ondelete([u.uid])" class="material-icons">delete</a></td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>

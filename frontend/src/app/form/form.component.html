@@ -1,0 +1,40 @@
+<div class="container-fluid details">
+    <div class="form">
+        <form [formGroup]="details" (ngSubmit)="onSubmit()">
+        <h1 class="header">Details</h1>
+            <div class="form-group">
+                <span>University Name</span>
+                <input formControlName="uni_name" type="text" placeholder="Uname"/>
+            </div>
+            <div class="form-group">
+                <span>Registration Date</span>
+                <input formControlName="reg_date" type="date" placeholder="RegDate"/>
+            </div>
+            <div class="form-group">
+                <span>Expiry Date</span>
+                <input formControlName="exp_date" type="date" placeholder="Expiry Date"/>
+            </div>
+            <div class="form-group">
+                <span>Number of Students</span>
+                <input formControlName="students" type="number" placeholder="Number of Students"/>
+            </div>
+            <div class="form-group">
+                <span>Email</span>
+                <input formControlName="email" type="email" placeholder="Email"/>
+            </div>
+            <div class="form-group">
+                <span>Image Url</span>
+                <input formControlName="img_url" type="text" placeholder="Image Url"/>
+            </div>
+            <div class="form-group">
+                <span>Website</span>
+                <input formControlName="web_url" type="text" placeholder="Website"/>
+            </div>
+            <div class="form-group">
+                <span>Contact No</span>
+                <input formControlName="contact" type="number" placeholder="Contact No"/>
+            </div>
+            <button  type="submit">Submit</button>
+        </form>
+    </div>
+</div>
