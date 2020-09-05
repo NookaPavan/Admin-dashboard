@@ -1,4 +1,4 @@
-[![Angular banner](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.sovereignconsult.com%2Fwp-content%2Fuploads%2F2019%2F10%2Fangular-js.png&imgrefurl=https%3A%2F%2Fwww.sovereignconsult.com%2Fblog%2Fimportance-of-angularjs%2F&tbnid=SBIbWZdK_RY4FM&vet=12ahUKEwj0mYzw8NHrAhVUNLcAHaYQAl4QMygHegUIARDXAQ..i&docid=qrfyBrbJS8akvM&w=500&h=480&q=angularjs&client=firefox-b-d&ved=2ahUKEwj0mYzw8NHrAhVUNLcAHaYQAl4QMygHegUIARDXAQ)](https://angularjs.org/)
+[![Angular banner](https://raw.githubusercontent.com/dart-lang/angular/master/doc/angulardart-logo.png)](https://angularjs.org/)
 [![Nodejs banner](https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png)](https://nodejs.org)
 
 <hr>
@@ -31,7 +31,9 @@ BackEnd-  NodeJS,ExpressJs,SQL
 ## Prerequisite
 
 1.NPM installed
+
 2.Angular installed
+
 3.DataBase
 
 ## Install Dependencies
